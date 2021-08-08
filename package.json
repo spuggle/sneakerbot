@@ -31,5 +31,7 @@
   },
   "homepage": "https://github.com/spuggle/sneakerbot#readme",
   "description": "",
-  "engine": "16.6.x"
+  "engines": {
+    "node": "16.6.x"
+  }
 }
