@@ -7,4 +7,5 @@ dotenv.config();
 const client = new SneakerClient();
 client.on("messageCreate", messageCreate);
 
-void client.login(process.env.BOT_TOKEN);
+void client.login(process.env.BOT_TOKEN)
+  .then(() => console.log("Successfully logged in!"));

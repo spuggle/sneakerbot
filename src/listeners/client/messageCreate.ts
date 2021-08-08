@@ -12,6 +12,7 @@ export async function messageCreate(rawMessage: Message): Promise<void> {
     : rawMessage;
 
   if (!message || message.author.bot) return;
+  console.log("Valid message detected!");
 
   if (message.content.toLowerCase().startsWith("$ping")) {
     return void message.channel.send("Pong!");
