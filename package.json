@@ -1,6 +1,8 @@
 {
   "scripts": {
-    "start": "node dist/bot.js"
+    "build": "npx tsc",
+    "start": "node dist/bot.js",
+    "start:build": "npm run build && npm start"
   },
   "devDependencies": {
     "@types/node": "^16.4.13",
@@ -28,5 +30,6 @@
     "url": "https://github.com/spuggle/sneakerbot/issues"
   },
   "homepage": "https://github.com/spuggle/sneakerbot#readme",
-  "description": ""
+  "description": "",
+  "engine": "16.6.x"
 }
